@@ -1,0 +1,203 @@
+.global {
+    
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: -5px 5px 30px 1px black;
+    background: right top no-repeat fixed;
+    
+}
+.global > #fon {
+   
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    
+}
+.UpBlock, .MiddleBlock {
+    
+    top: 0px;
+    left: 0px;
+    width: inherit;
+    height: 50px;
+    color: blueviolet;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    
+    
+}
+.MiddleBlock {
+   height: 246px;
+}
+
+.MiddleBlock > #temperature {
+    
+    top: 30px;
+    left: 30px;
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    border: none;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: rgba(231, 184, 75, 0.5);
+    box-shadow: 0px 0px 6px 0px blueviolet;
+    background-color: rgba(44, 78, 80, 0.5);
+    
+}
+
+
+@font-face {
+    
+    
+    font-family: Zebulon;
+    src: url(fonts/15683.ttf);
+    
+}
+
+@font-face {
+    
+    font-family: Gill Sans Nova Book;
+    src: url(fonts/16072.ttf);
+}
+
+.hours, .minute{
+    
+    top: 155px;
+    float: left;
+    width: 80px;
+    font-size: 36px;
+    margin-left: 10px;
+    position: relative;
+    font-family: Zebulon;
+    
+}
+#dayWeek, #dayMonth, #year {
+    
+    top: 200px;
+    left: -170px;
+    float: left;
+    font-family: Zebulon;
+    margin-left: 10px;
+    position: relative;
+    
+}
+#humidity, #pressure, #visibility {
+    
+    left: 270px;
+    top: -30px;
+    width: 230px;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 20px;
+    position: relative;
+    font-family: Zebulon;
+    
+}
+
+#pressure::after {
+    
+    top: -20px;
+    text-align: right;
+    position: absolute;
+    content: url("/img/termo.png");
+    
+}
+
+span {
+    color: rgba(227,57,34, 0.9);
+    font-size: 20px;
+}
+
+.UpBlock > p {
+    
+    top: 5px;
+    left: 20px;
+    float: left;
+    display: fixed;
+    position: relative;
+    text-align: left;
+    color: rgba(231, 184, 75, 0.5);
+    font-family: Zebulon;
+    
+}
+
+.UpBlock > input {
+    
+    top: 10px;
+    padding: 10px;
+    left: 50px;
+    outline: none;
+    border: none;
+    font-family: Zebulon;
+    color: gray;
+    border-radius: 10px;
+    background-color: rgba(40, 60, 90, 0.5);
+    position: relative;
+    
+}
+
+hr {
+    
+    border: none; 
+    background-color: blue; 
+    color: red; 
+    height: 1px;
+    
+}
+
+.city {
+    
+    top: 197px;
+    left: 350px;
+    width: 150px;
+    font-size: 11px;
+    font-family: Zebulon;
+    position: absolute;
+    word-wrap: break-word;
+    color: rgba(231, 184, 75, 0.5);
+    
+}
+.styleElem {
+    
+    top: 10px;
+    left: 170px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    background: url("/img/load.png");
+    position: absolute;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes move {
+    
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+    
+}
+
+.tooltype {
+    
+    z-index: 5;
+    width: 210px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: Gill Sans Nova Book;
+    background-color: rgba(55, 140, 240, 0.9);
+    
+}
+
